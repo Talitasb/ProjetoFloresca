@@ -1,0 +1,367 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/ajuda.css">
+    <title>@ViewData["Title"] Ajuda</title>
+    <link rel="shortcut icon" href="/imagens/logoc.ico" type="image/x-icon">
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="~/imagem/floresça-removebg-preview.png" width="65" rounded float-left" alt="...">
+            <!--<a class="navbar-brand" href="#">Navbar</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Ajuda">Preciso de ajuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Voluntariado">Voluntariado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Parcerias">Parcerias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<br>
+<br>
+
+
+<h1 class="visually-hidden">Preciso de Ajuda</h1>
+  
+<p class="text-center lead mb-4">
+    Pedir ajuda não é sinônimo de fraqueza ou de vulnerabilidade. <br>Na verdade, é justamente o contrário, pedir ajuda é um ato de valentia através do qual conhecemos a importância de assumir nossas limitações e de reconhecer o papel que os outros têm em nosso crescimento.</p>
+
+    <div class="px-4 py-5 my-5 text-center" style="background-color: rgba(206, 199, 199, 0.258);">
+        <h1 class="display-5 fw-bold">Situação de Risco</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Parabéns por conseguir chegar até aqui, iremos te ajudar, para isso, responda algumas perguntas.</p>
+            <p>Você esta em situação de risco?</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <form asp-fragment="simrisco"><button class="btn btn-outline btn-lg px-4">Sim</button></form>
+                <form asp-fragment="naorisco"><button class="btn btn-outline btn-lg px-4">Não</button></form>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="b-example-divider"></div>
+
+    <div id="simrisco" class="px-4 pt-5 my-5 text-center border-bottom">
+
+        <h1 class="display-4 fw-bold">Apoio</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Sinto muito pela sua situação e obrigada por confirar em nós.</p>
+            <p>Qual seria o melhor apoio para o seu caso?</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <form asp-fragment="juridico"><button class="btn btn-outline btn-lg px-4">Juridico</button></form>
+                <form asp-fragment="psicologiag"><button class="btn btn-outline btn-lg px-4">Psicologico</button></form>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="b-example-divider"></div>
+
+        <div id="naorisco" class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="~/imagem/emprego.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <h1 class="display-5 fw-bold">Empregabilidade</h1>
+                    <p class="lead mb-4">A Independência financeira te da liberdade de fazer suas próprias escolhas e ficar em paz consigo mesma.</p>
+                    <p>Você está empregada no momento?</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                        <form asp-fragment="simempreg"><button class="btn btn-outline btn-lg px-4">Sim</button></form>
+                        <form asp-fragment="naoempreg"><button class="btn btn-outline btn-lg px-4">Não</button></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <hr>
+
+        <div class="b-example-divider"></div>
+
+        <div id="naoempreg" class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold lh-1 mb-3">Cadastro Vagas</h1>
+                    <p class="col-lg-10 fs-4">Preencha nosso cadastro para receber informações sobre novas vagas.</p>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <form class="p-4 p-md-5 border rounded-3 bg-light">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Nome" name="Nome">
+                            <label for="floatingInput">Nome</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Telefone" name="Telefone">
+                            <label for="floatingImput">Telefone</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email </label>
+                        </div>
+                        <br>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Digite uma senha</label>
+                        </div>
+                        <br>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Confirme a senha </label>
+                        </div>
+                        <br>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Seu número é Whatsapp?
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
+                        <hr class="my-4">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <hr>
+
+        <div class="b-example-divider"></div>
+
+        <div id="simempreg" class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold lh-1 mb-3">Apoio Psicologico Geral</h1>
+                    <p class="col-lg-10 fs-4">As vezes precisamos só ser ouvidas, estamos aqui não só para ouvir e sim para te acolher.</p>
+                    <p>Preencha nosso cadastro para uma psicologa entrar em contato.</p>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <form class="p-4 p-md-5 border rounded-3 bg-light">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Nome" name="Nome">
+                            <label for="floatingInput">Nome</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" placeholder="Telefone" name="Telefone">
+                            <label for="floatingImput">Telefone</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email </label>
+                        </div>
+                        
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Digite uma senha</label>
+                        </div>
+                        <br>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Confirme a senha </label>
+                        </div>
+                        <br>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Seu número é Whatsapp?
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
+                        <hr class="my-4">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="b-example-divider"></div>
+
+        <div id="psicologiag" class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold lh-1 mb-3">Apoio Psicologico Urgência</h1>
+                    <p class="col-lg-10 fs-4">Você não esta sozinha, esse é o seu primeiro passo, você é uma vitoriosa!</p>
+                    <p>Preencha nosso cadastro para uma psicologa entrar em contato.</p>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <form class="p-4 p-md-5 border rounded-3 bg-light">
+                        <div class="form-floating mb-3">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" placeholder="Nome" name="Nome">
+                                <label for="floatingInput">Nome</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" placeholder="Telefone" name="Telefone">
+                                <label for="floatingImput">Telefone</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email </label>
+                            </div>
+
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Digite uma senha</label>
+                            </div>
+                            <br>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Confirme a senha </label>
+                            </div>
+                            <br>
+                            <div class="checkbox mb-3">
+                                <label>
+                                    <input type="checkbox" value="remember-me"> Seu número é Whatsapp?
+                                </label>
+                            </div>
+                            <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
+                            <hr class="my-4">
+                        </div>
+                    </form>
+                </div>
+               
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="b-example-divider"></div>
+
+        <div id="juridico" class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold lh-1 mb-3">Apoio Juridico</h1>
+                    <p class="col-lg-10 fs-4">Toda necessidade é importante e estamos aqui para lhe orientar da melhor forma possivel.</p>
+                    <p>Preencha nosso cadastro para uma voluntaria do Juridico entrará em contato</p>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <form class="p-4 p-md-5 border rounded-3 bg-light">
+                        <div class="form-floating mb-3">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" placeholder="Nome" name="Nome">
+                                <label for="floatingInput">Nome</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" placeholder="Telefone" name="Telefone">
+                                <label for="floatingImput">Telefone</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email </label>
+                            </div>
+                           
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Digite uma senha</label>
+                            </div>
+                            <br>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Confirme a senha </label>
+                            </div>
+                            <br>
+                            <div class="checkbox mb-3">
+                                <label>
+                                    <input type="checkbox" value="remember-me"> Seu número é Whatsapp?
+                                </label>
+                            </div>
+                            <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
+                            <hr class="my-4">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+            
+
+
+
+
+
+
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+            <!-- Grid container -->
+            <div class="container pt-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <!-- Google -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-google"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <!-- Github
+                    <a
+                      class="btn btn-link btn-floating btn-lg text-dark m-1"
+                      href="#!"
+                      role="button"
+                      data-mdb-ripple-color="dark"
+                      ><i class="fab fa-github"></i
+                    ></a>-->
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-dark" href="#">Floresça!</a>
+            </div>
+            <!-- Copyright -->
+        </footer>

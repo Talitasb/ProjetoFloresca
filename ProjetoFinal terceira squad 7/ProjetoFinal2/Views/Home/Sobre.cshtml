@@ -1,0 +1,129 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/sobrenos.css">
+    <title>@ViewData["Title"] Sobre</title>
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="~/imagem/floresça-removebg-preview.png" width="65" rounded float-left" alt="...">
+            <!--<a class="navbar-brand" href="#">Navbar</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Ajuda">Preciso de ajuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Voluntariado">Voluntariado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Parcerias">Parcerias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <br>
+    <br>
+
+    <div id="about-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="main-title">Sobre</h1>
+                    <br>
+
+                </div>
+
+                <div class="col-md-6">
+                    <img class="img-fluid" src="~/imagem/floresça.jpg" alt="Logo" style="width:500px">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="about-title">Floresça...onde Deus te Plantar</h3>
+                    <p>
+                        A  figura feminina ao longo dos tempos , sempre foi admirada em nossa sociedade, infelizmente muito mais por uma visão de posse, de propriedade, do que por suas
+                        necessidades, ambições e sonhos.
+                        Suas dores e dificuldades quase sempre menosprezadas ou nem vistas, há pouco tempo que ajustes no sentido de balizar as diferenças de gênero tem sido feitos,
+                        mas ainda há muito o que se fazer para que exista uma real equidade de gênero e  é nesse sentido que foi criado o floreça.
+                    <p>
+                        Mais do que uma ferramenta que auxilia mulheres, a Floresça é uma ferramenta de transformação social que liga mulheres e suas necessidades, ter voluntários dipostos
+                        a ajudar, protagonizando não só a transformação dessas mulheres em situação de vulnerabilidade, como a  dos profissionais e voluntários que terão suas vidas
+                        tocadas pelas histórias das mulheres atendidas fazendo com que tenham uma visão mais ampla das lutas e necessidades femininas, transformando a forma como
+                        desempenham suas funções em um sociedade tão desigual.
+                    <p>Nossos Serviços:</p>
+                    <ul id="about-list">
+                        <li><i class="fas fa-check"></i> Ajuda Psicológica;</li>
+                        <li><i class="fas fa-check"></i> Ajuda Jurídica;</li>
+                        <li><i class="fas fa-check"></i> Auxílio a recolocação ao mercado;</li>
+                        <li><i class="fas fa-check"></i> Acolhimento de mulheres vitimas de violência.</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+               data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+               data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+               data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+               data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+               data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+            <!-- Github
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-github"></i
+                ></a>-->
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-dark" href="#">Floresça!</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+

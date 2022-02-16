@@ -1,0 +1,120 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/contato.css">
+    <title>@ViewData["Title"] Contato</title>
+    <link rel="shortcut icon" href="/imagens/logoc.ico" type="image/x-icon">
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="~/imagem/floresça-removebg-preview.png" width="65" rounded float-left" alt="...">
+            <!--<a class="navbar-brand" href="#">Navbar</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Ajuda">Preciso de ajuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Voluntariado">Voluntariado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Parcerias">Parcerias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <br>
+    <br>
+
+
+    <div class="col-12">
+        <h1 class="main-title2"> Contato</h1>
+    </div>
+    <br>
+
+    <div class="card" style= "width:600px">
+        <div class="contato1">
+
+            <div class="col-md-3 d-block contact-box">
+
+                <p>Para duvidas e informações, segue nossos contatos: </p>
+                <p><i class="fas fa-phone"></i> (48) 99999-9999</p>
+                <p><i class="far fa-clock"></i> Atendimento: Das: 8:00 as 19:00 Seg á Sex</p>
+                <p><i class="far fa-envelope"></i> contato@floresca.com.br</p>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Lorem Ipsum - 1314</p>
+            </div>
+        </div>
+        <div class="mensagem">
+            <div class="col-md-3 d-block contact-box">
+                <p>Ou nos deixe uma mensagem:</p>
+                <input type="text" class="form-control" placeholder="E-mail" name="email">
+                <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                <a class="btn btn-outline-primary" href="#">Enviar</a>
+
+            </div>
+        </div>
+
+
+    </div>
+    <br>
+
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                   data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                   data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                   data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                   data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                   data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github
+                  <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-github"></i
+                  ></a>-->
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-dark" href="#">Floresça!</a>
+        </div>
+        <!-- Copyright -->
+    </footer>

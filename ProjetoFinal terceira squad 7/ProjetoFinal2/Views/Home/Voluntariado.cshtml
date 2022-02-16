@@ -1,0 +1,242 @@
+﻿@model ProjetoFinal2.Models.CadastroVoluntario
+
+<head>
+    <link href="~/css/voluntariado.css" rel="stylesheet">
+    <title>@ViewData["Title"] Voluntariado</title>
+    <link rel="shortcut icon" href="/imagens/logoc.ico" type="image/x-icon">
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="~/imagem/floresça-removebg-preview.png" width="65" rounded float-left" alt="...">
+            <!--<a class="navbar-brand" href="#">Navbar</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Ajuda">Preciso de ajuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Voluntariado">Voluntariado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Parcerias">Parcerias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<br>
+<br>
+
+
+<div id="about-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="main-title">Voluntariado</h1>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="~/imagem/voluntariado.jpg" alt="Agência hDC">
+            </div>
+            <div class="col-md-6">
+                <h3 class="about-title">De mulheres para mulheres...</h3>
+                <p>
+                    Venha fazer parte na nossa equipe, como voluntário. Ser voluntário além de ajudar <br>
+                    ao outro, ajuda a nós mesmos, nos enriquece como pessoa e cidadão.<br>
+                    Desenvolvemos programas em três eixos principais, com o objetivo de ajudar nossa sociedade.
+                    <br>
+                    Queremos pessoas ativas e com vontade de mudar o mundo que vivemos, que tem um olhar <br>
+                    e atitudes acolhedoras, com reciprocidade e principalmente sororidade.<br>
+                    Ser voluntário é usar o bem como .... florir
+                </p>
+<p>Nossas Vagas:</p>
+<ul id="about-list">
+    <li><i class="fas fa-check"></i> Psicologo formado, ou em fase de estagio para auxiliar as mulheres.</li>
+    <li><i class="fas fa-check"></i> Pessoa da area Juridica para auxilio e orientação nos casos.</li>
+    <li><i class="fas fa-check"></i> Dar acolhimento a mulheres vitimas de violência que precisam de auxilio juridico ou psicologico.</li>
+    <li><i class="fas fa-check"></i> Pessoa para auxilio nos encaminhamentos e encaminhamento de novas vagas.</li>
+    <li><i class="fas fa-check"></i> Todo apoio é bem vindo...</li>
+
+</ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<br>
+<br>
+
+<div class="row fotobody">
+    <br>
+    <div class="col-12">
+        <h1 class="main-title2"> Seja Voluntario!</h1>
+    </div>
+    <br>
+    <form asp-action="Create" method="post" class="main-form">
+        <div class=card>
+            <h4>Faça seu cadastro</h4>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group"></div>
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Nome" required>
+                    
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Sobrenome</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Sobrenome" required>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="form-group"></div>
+                    <label for="nome">Endereço</label>
+                    <input type="text" class="form-control" id="Endereço" placeholder="Endereço" required>
+                    <div class="invalid-feedback">
+                        Por favor, confirme seu endereço.
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <label for="Cidade">Cidade</label>
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="Cidade" required>
+                    <div class="invalid-feedback">
+                        Por favor, confirme sua cidade.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationCustom04">Estado</label>
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="Estado" required>
+                    <div class="invalid-feedback">
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <label for="validationCustom05">CEP</label>
+                    <input type="text" class="form-control" id="validationCustom05" placeholder="CEP" required>
+                    <div class="invalid-feedback">
+                        Por favor, confirme seu CEP.
+                    </div>
+                </div>
+            </div>
+            <h5>Area de interesse:</h5>
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Psicologia
+                </label>
+                <label>
+                    <input type="checkbox" value="remember-me"> Juridico
+                </label>
+                <label>
+                    <input type="checkbox" value="remember-me"> Geral
+                </label>
+            </div>
+            <a class="btn btn-outline-primary" href="#">Enviar</a>
+        </div>
+    </form>
+    <br>
+</div>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+
+
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+               href="#!"
+               role="button"
+               data-mdb-ripple-color="dark">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+               href="#!"
+               role="button"
+               data-mdb-ripple-color="dark">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+            <!-- Google -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+               href="#!"
+               role="button"
+               data-mdb-ripple-color="dark">
+                <i class="fab fa-google"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+               href="#!"
+               role="button"
+               data-mdb-ripple-color="dark">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+               href="#!"
+               role="button"
+               data-mdb-ripple-color="dark">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <!-- Github
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-github"></i
+            ></a>-->
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-dark" href="#">Floresça!</a>
+    </div>
+    <!-- Copyright -->
+</footer>

@@ -1,0 +1,11 @@
+button{
+    background:linear-gradient(to right, #8c52ff,#b6a6e8);
+text-decoration: none;
+}
+a{
+    color: white;
+}
+
+container-fluid{
+    width: auto;
+}
